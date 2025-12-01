@@ -1,5 +1,5 @@
 :root {
-  --main-color: #ffa200;
+  --main-color: #ffffff;
   --secondary-color: #fea0000fa200;
 }
 
@@ -32,7 +32,7 @@ body {
 /* start header */
 /* start header */
 .header {
-  background-color: #ffa200;
+  background-color: #ffffff;
 }
 
 .header .container {
@@ -78,13 +78,13 @@ body {
 @media (max-width: 768px) {
   .header {
     height: 50px;
-    padding-bottom: 20px;
-    padding-top: -200px;
-    margin-top: 0px;
+    padding: 0;
+      margin-top: 0px;
+      `
   }
 
   .header img {
-    width: 40px;
+    width: 30px;
   }
 
   .header .container .name {

@@ -1,5 +1,5 @@
 :root {
-  --main-color: #ffa200;
+  --main-color: #ffffff;
   --secondary-color: #ea0000;
 }
 
@@ -34,7 +34,7 @@ body {
 /* start header */
 /* start header */
 .header {
-  background-color: #ffa200;
+  background-color: #ffffff;
 }
 
 .header .container {
@@ -85,11 +85,11 @@ body {
   }
 
   .header img {
-    width: 60px;
+    width: 40px;
   }
 
   .header .container .name {
-    font-size: 16px;
+    font-size: 13px;
   }
 
 
@@ -103,7 +103,7 @@ body {
 
 .profile {
   text-align: center;
-  color: #ffa200;
+  color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
   direction: rtl;
@@ -144,7 +144,7 @@ body {
 
 .profile .icon i {
   font-size: 30px;
-  color: #ffa200;
+  color: #ffffff;
 }
 
 .profile .icon i:hover {
@@ -160,7 +160,7 @@ body {
 
   padding-top: 50px;
 
-  color: #ffa200;
+  color: #ffffff;
   text-align: center;
   padding-bottom: 48px;
 }
@@ -169,7 +169,7 @@ body {
   width: 100%;
   font-size: 40px;
   font-weight: 900;
-  color: #ffa200;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -183,14 +183,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #ffa200 2px solid;
+  border: #ffffff 2px solid;
   border-radius: 100px;
   font-weight: 900;
 }
 
 .contant .col:hover span {
   display: inline;
-  color: #ffa200;
+  color: #ffffff;
 }
 
 .contant .col:hover {
