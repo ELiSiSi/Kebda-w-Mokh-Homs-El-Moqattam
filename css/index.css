@@ -1,6 +1,7 @@
 :root {
   --main-color: #ffffff;
-  --secondary-color: #ea0000;
+  --secondary-color: #FF6B00; /* البرتقالي من اللوجو */
+  --background-dark: #1a1a1a; /* الأسود الداكن */
 }
 
 html {
@@ -14,33 +15,23 @@ html {
 }
 
 body {
-   background-color:  #da0404;
+  background-color: #1a1a1a; /* خلفية سوداء */
   width: 100%;
-
 }
-
-
 
 .container {
   width: 90%;
-
   margin: auto;
 }
 
-
-
-
-/* start header */
-/* start header */
 /* start header */
 .header {
-  background-color: #ffffff;
+  background-color: #FF6B00; /* برتقالي من اللوجو */
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
 }
 
@@ -48,33 +39,33 @@ body {
   width: 110px;
   margin: 0px;
   padding: 0px;
-
   animation-name: thebest;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-
 }
 
 @keyframes thebest {
   0% {
     translate: 0 0;
   }
-
   50% {
     translate: 20px 0;
   }
-
   100% {
     translate: 0 0;
   }
 }
 
 .header .container .name {
-  color: #ea0000;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header .container .name span {
-  color: var(--secondary-color);
+  color: #1a1a1a; /* أسود للتمييز */
 }
 
 @media (max-width: 768px) {
@@ -91,16 +82,9 @@ body {
   .header .container .name {
     font-size: 13px;
   }
-
-
 }
 
-
-
-/* start  profile */
-/* start  profile */
-/* start  profile */
-
+/* start profile */
 .profile {
   text-align: center;
   color: #ffffff;
@@ -112,6 +96,7 @@ body {
 .profile .image img {
   width: 200px;
   border-radius: 50%;
+  border: 4px solid #FF6B00; /* إطار برتقالي */
 }
 
 .profile .text {
@@ -129,37 +114,35 @@ body {
 }
 
 .profile .text p i {
-  color: #ffffff;
+  color: #FF6B00; /* أيقونات برتقالية */
 }
 
 .profile .text span {
   font-size: 30px;
   font-weight: 1000;
+  color: #FF6B00; /* نص برتقالي */
 }
 
 .profile .icon {
-  padding-top: 20px;
+  padding-top: 35px;
   word-spacing: 15px;
 }
 
 .profile .icon i {
-  font-size: 30px;
-  color: #ffffff;
+  font-size: 50px;
+  color: #FF6B00; /* أيقونات برتقالية */
+  transition: all 0.3s ease;
 }
 
 .profile .icon i:hover {
-  font-size: 40px;
-  color: #FFF;
+  font-size: 60px;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
-/* start   contant */
-/* start   contant */
-/* start   contant */
-
+/* start contant */
 .contant {
-
   padding-top: 50px;
-
   color: #ffffff;
   text-align: center;
   padding-bottom: 48px;
@@ -178,52 +161,58 @@ body {
 }
 
 .contant .col {
-   height: 50px;
+  min-height: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #ffffff 2px solid;
+  border: #FF6B00 3px solid; /* إطار برتقالي */
   border-radius: 100px;
   font-weight: 900;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  margin-bottom: 18px;
+  padding: 12px 25px;
 }
 
 .contant .col:hover span {
   display: inline;
-  color: #ffffff;
+  color: #1a1a1a;
 }
 
 .contant .col:hover {
-  height: 50px;
+  min-height: 60px;
   width: 110%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #ffffff 2px solid;
+  background-color: #FF6B00; /* خلفية برتقالية عند الـ hover */
+  border: #FF6B00 3px solid;
   border-radius: 100px;
+  transform: translateX(-5%);
+}
+
+.contant .col:hover a {
+  color: #1a1a1a; /* نص أسود عند الـ hover */
 }
 
 .contant .col:hover i {
-  color: #FFF;
+  color: #1a1a1a;
 }
 
 @media (min-width: 500px) {
   .contant {
     padding-top: 30px;
-
-
     text-align: center;
     padding-bottom: 48px;
   }
 
   .contant .col {
-    height: 50px;
+    min-height: 60px;
     width: 65%;
-    margin: auto;
+    margin: 18px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    padding: 12px 25px;
   }
 
   .contant a {
@@ -231,11 +220,10 @@ body {
     font-size: 29px;
     text-decoration: none;
     font-weight: 900;
-
   }
 
   .contant .col:hover {
-    height: 50px;
+    min-height: 60px;
     width: 75%;
     display: flex;
     justify-content: center;
@@ -246,30 +234,32 @@ body {
 
 @media (max-width: 500px) {
   .contant {
-    padding-left: 0px;
-    width: 350px;
-
-
+    padding: 30px 20px 100px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
     text-align: center;
-    padding-bottom: 150px;
   }
 
   .contant .col {
-    height: 50px;
+    min-height: 55px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    margin-bottom: 12px;
+    padding: 10px 20px;
   }
 
   .contant a {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
+    line-height: 1.3;
   }
 
   .contant .col:hover {
-    height: 50px;
+    min-height: 55px;
     width: 100%;
     display: flex;
     justify-content: center;
