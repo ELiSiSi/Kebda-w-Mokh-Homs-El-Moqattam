@@ -126,6 +126,7 @@ body {
 .profile .icon {
   padding-top: 35px;
   word-spacing: 15px;
+    color: #FF6B00;
 }
 
 .profile .icon i {
@@ -133,7 +134,11 @@ body {
   color: #FF6B00; /* أيقونات برتقالية */
   transition: all 0.3s ease;
 }
-
+.profile .icon a {
+  font-size: 50px;
+  color: #FF6B00; /* أيقونات برتقالية */
+  transition: all 0.3s ease;
+}
 .profile .icon i:hover {
   font-size: 60px;
   color: #ffffff;

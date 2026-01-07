@@ -2,7 +2,6 @@
     --primary-color: #FF6B00; /* البرتقالي من اللوجو */
     --secondary-color: #1a1a1a; /* الأسود الداكن */
     --white-color: #ffffff;
-    --text-color: #333333;
 }
 
 * {
@@ -45,19 +44,8 @@ body {
 }
 
 @keyframes logoAnimation {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(20px); }
-    100% { transform: translateX(0); }
-}
-
-.menu-brand h1 {
-    color: var(--white-color);
-    font-size: 28px;
-    font-weight: 900;
-}
-
-.menu-brand h1 span {
-    color: var(--secondary-color);
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
 
 /* ===== Section Title ===== */
@@ -70,7 +58,7 @@ body {
     color: var(--white-color);
     font-size: 32px;
     font-weight: bold;
-    background: linear-gradient(90deg, var(--primary-color), var(--white-color));
+    background: linear-gradient(to left, var(--primary-color), var(--white-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -157,7 +145,7 @@ body {
 }
 
 .order-whatsapp-button i {
-    margin-left: 10px;
+    margin-inline-start: 10px;
 }
 
 /* ===== Mobile Responsive (768px and below) ===== */
